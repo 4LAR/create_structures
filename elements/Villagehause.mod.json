@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "structure",
+  "definition": {
+    "structure": "vallage_hause",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 100000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.GRASS"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "forest"
+      },
+      {
+        "value": "plains"
+      },
+      {
+        "value": "taiga"
+      }
+    ],
+    "ignoreBlocks": "AIR",
+    "generateCondition": {
+      "name": "Additional_gen"
+    }
+  }
+}

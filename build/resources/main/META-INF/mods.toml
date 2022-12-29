@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT License"
+
+[[mods]]
+modId="create_structures"
+version="1.0.0"
+displayName="create_structures"
+credits="avtor mudak"
+displayURL="https://mcreator.net"
+authors="100LAR & Urod"
+
+[[dependencies.create_structures]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
