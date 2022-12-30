@@ -12,7 +12,7 @@
       "name": "Villagehause",
       "type": "structure",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "villagehause"
     },

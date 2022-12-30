@@ -12,7 +12,7 @@
       "name": "Villagehause",
       "type": "structure",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "villagehause"
     },
@@ -99,7 +99,7 @@
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
     "credits": "avtor mudak",
-    "modElementsPackage": "net.stolar.createstructures",
+    "modElementsPackage": "net.mcreator.createstructures",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202200348217
