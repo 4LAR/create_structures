@@ -20,38 +20,9 @@
       "name": "Additional_gen",
       "type": "procedure",
       "sortid": 7,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "additional_gen",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Test",
-      "type": "procedure",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
       "metadata": {
         "return_type": "logic",
         "dependencies": [

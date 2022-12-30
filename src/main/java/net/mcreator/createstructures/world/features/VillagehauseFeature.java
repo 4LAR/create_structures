@@ -58,7 +58,7 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 		"grave2",
 		"grave3",
 		"grave4",
-		"vallage_big_hause",
+//		"vallage_big_hause",
 		"vallage_hause",
 		"vallage_hause2",
 		"vallage_hause3"
@@ -87,9 +87,6 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 			return false;
 
 //		System.out.println(template.getSize());
-		int struct_x = template.getSize().getX();
-		int struct_y = template.getSize().getY();
-		int struct_z = template.getSize().getZ();
 		
 		boolean anyPlaced = false;
 		if ((context.random().nextInt(1000000) + 1) <= 100000) {
@@ -109,7 +106,12 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 				int z = spawnTo.getZ();
 
 				////////////////////////////////////
-				int rotate_angle = context.random().nextInt(3);
+
+				int struct_x = template.getSize().getX();
+				int struct_y = template.getSize().getY();
+				int struct_z = template.getSize().getZ();
+				
+				int rotate_angle = 0;//context.random().nextInt(3);
 				
 				int xOffset = 0;
         		int zOffset = 0;
@@ -125,7 +127,7 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 				}
 				////////////////////////////////////
 				
-				if (!Additional_genProcedure.execute(world, x + xOffset, y, z + zOffset, struct_x, struct_y, struct_z)) {
+				if (!Additional_genProcedure.execute(world, x + xOffset, y, z + zOffset, template)) {
 					spawned = false;
 					continue;
 				}
