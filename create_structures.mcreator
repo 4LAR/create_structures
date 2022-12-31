@@ -54,18 +54,12 @@
       "registry_name": "scorched"
     },
     {
-      "name": "Gasmask",
-      "type": "armor",
-      "sortid": 9,
+      "name": "Zombie",
+      "type": "livingentity",
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gasmask",
-      "metadata": {
-        "eh": true,
-        "el": false,
-        "eb": false,
-        "ec": false
-      }
+      "registry_name": "zombie"
     }
   ],
   "variable_elements": [],
@@ -73,10 +67,8 @@
   "language_map": {
     "en_us": {
       "biome.create_structures.scorched": "Scorched",
-      "item.create_structures.gasmask_chestplate": "Gasmask Кираса",
-      "item.create_structures.gasmask_leggings": "Gasmask Поножи",
-      "item.create_structures.gasmask_helmet": "Gasmask",
-      "item.create_structures.gasmask_boots": "Gasmask Ботинки"
+      "item.create_structures.zombie_spawn_egg": "soldier_zombie Spawn Egg",
+      "entity.create_structures.zombie": "soldier_zombie"
     }
   },
   "foldersRoot": {

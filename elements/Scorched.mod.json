@@ -4,10 +4,10 @@
   "definition": {
     "name": "Scorched",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "Blocks.DIRT#2"
     },
     "undergroundBlock": {
-      "value": "Blocks.BLACKSTONE"
+      "value": "Blocks.DIRT#1"
     },
     "underwaterBlock": {
       "value": "Blocks.ROOTED_DIRT"
@@ -17,10 +17,14 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -10400189,
+      "value": -10401001,
       "falpha": 0.0
     },
     "waterColor": {
+      "value": -13421824,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
       "value": -13421824,
       "falpha": 0.0
     },
@@ -50,7 +54,7 @@
     "spawnBiomeNether": false,
     "spawnInCaves": false,
     "biomeWeight": 65,
-    "grassPerChunk": 0,
+    "grassPerChunk": 10,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
@@ -60,9 +64,9 @@
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "treesPerChunk": 2,
-    "vanillaTreeType": "Big trees",
+    "vanillaTreeType": "Savanna trees",
     "treeType": 1,
-    "minHeight": 7,
+    "minHeight": 4,
     "treeStem": {
       "value": "Blocks.LOG2#1"
     },
@@ -98,8 +102,19 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer"
+      "FrozenTopLayer",
+      "TaigaRocks"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Zombie"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "ambient"
+      }
+    ]
   }
 }

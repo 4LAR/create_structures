@@ -54,47 +54,30 @@
       "registry_name": "scorched"
     },
     {
-      "name": "Soldierofdance",
-      "type": "armor",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "soldierofdance",
-      "metadata": {
-        "eh": true,
-        "el": false,
-        "eb": false,
-        "ec": false
-      }
-    },
-    {
-      "name": "Test",
-      "type": "armor",
+      "name": "Zombie",
+      "type": "livingentity",
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "eh": false,
-        "el": false,
-        "eb": false,
-        "ec": false
-      }
+      "registry_name": "zombie"
+    },
+    {
+      "name": "Scorchedgrass",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorchedgrass"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.create_structures.test_helmet": "Test Шлем",
-      "item.create_structures.test_boots": "Test Ботинки",
       "biome.create_structures.scorched": "Scorched",
-      "item.create_structures.test_leggings": "Test Поножи",
-      "item.create_structures.test_chestplate": "Test Кираса",
-      "item.create_structures.soldierofdance_chestplate": "Soldierofdance Кираса",
-      "item.create_structures.soldierofdance_boots": "Soldierofdance Ботинки",
-      "item.create_structures.soldierofdance_leggings": "Soldierofdance Поножи",
-      "item.create_structures.soldierofdance_helmet": "solder halmet"
+      "item.create_structures.zombie_spawn_egg": "soldier_zombie Spawn Egg",
+      "entity.create_structures.zombie": "soldier_zombie",
+      "block.create_structures.scorchedgrass": "Scorchedgrass"
     }
   },
   "foldersRoot": {

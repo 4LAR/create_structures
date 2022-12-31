@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.createstructures.init.CreateStructuresModItems;
 import net.mcreator.createstructures.init.CreateStructuresModFeatures;
+import net.mcreator.createstructures.init.CreateStructuresModEntities;
 import net.mcreator.createstructures.init.CreateStructuresModBiomes;
 
 import java.util.function.Supplier;
@@ -48,6 +49,7 @@ public class CreateStructuresMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		CreateStructuresModItems.REGISTRY.register(bus);
+		CreateStructuresModEntities.REGISTRY.register(bus);
 
 		CreateStructuresModFeatures.REGISTRY.register(bus);
 
