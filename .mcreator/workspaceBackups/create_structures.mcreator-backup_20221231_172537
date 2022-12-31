@@ -44,12 +44,40 @@
           }
         ]
       }
+    },
+    {
+      "name": "Scorched",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorched"
+    },
+    {
+      "name": "Test",
+      "type": "armor",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": false,
+        "ec": false
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.create_structures.test_helmet": "Test Шлем",
+      "item.create_structures.test_boots": "Test Ботинки",
+      "biome.create_structures.scorched": "Scorched",
+      "item.create_structures.test_leggings": "Test Поножи",
+      "item.create_structures.test_chestplate": "Test Кираса"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -60,7 +88,7 @@
     "modName": "create_structures",
     "version": "1.0.0",
     "author": "100LAR \u0026 Urod",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/4LAR/create_structures",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,

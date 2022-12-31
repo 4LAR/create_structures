@@ -44,12 +44,68 @@
           }
         ]
       }
+    },
+    {
+      "name": "Scorched",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorched"
+    },
+    {
+      "name": "Soldierofdance",
+      "type": "armor",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldierofdance",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.create_structures.scorched": "Scorched",
+      "item.create_structures.soldierofdance_chestplate": "Soldierofdance Кираса",
+      "item.create_structures.soldierofdance_boots": "Soldierofdance Ботинки",
+      "item.create_structures.soldierofdance_leggings": "Soldierofdance Поножи",
+      "item.create_structures.soldierofdance_helmet": "solder halmet"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -60,7 +116,7 @@
     "modName": "create_structures",
     "version": "1.0.0",
     "author": "100LAR \u0026 Urod",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/4LAR/create_structures",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,

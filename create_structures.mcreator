@@ -44,12 +44,40 @@
           }
         ]
       }
+    },
+    {
+      "name": "Scorched",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorched"
+    },
+    {
+      "name": "Gasmask",
+      "type": "armor",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gasmask",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.create_structures.scorched": "Scorched",
+      "item.create_structures.gasmask_chestplate": "Gasmask Кираса",
+      "item.create_structures.gasmask_leggings": "Gasmask Поножи",
+      "item.create_structures.gasmask_helmet": "Gasmask",
+      "item.create_structures.gasmask_boots": "Gasmask Ботинки"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -60,7 +88,7 @@
     "modName": "create_structures",
     "version": "1.0.0",
     "author": "100LAR \u0026 Urod",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/4LAR/create_structures",
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,

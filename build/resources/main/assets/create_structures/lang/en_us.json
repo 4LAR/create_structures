@@ -1,1 +1,7 @@
-{}
+{
+  "biome.create_structures.scorched": "Scorched",
+  "item.create_structures.gasmask_chestplate": "Gasmask Кираса",
+  "item.create_structures.gasmask_leggings": "Gasmask Поножи",
+  "item.create_structures.gasmask_helmet": "Gasmask",
+  "item.create_structures.gasmask_boots": "Gasmask Ботинки"
+}

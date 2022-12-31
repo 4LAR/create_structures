@@ -7,7 +7,7 @@ modId="create_structures"
 version="1.0.0"
 displayName="create_structures"
 credits="avtor mudak"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/4LAR/create_structures"
 authors="100LAR & Urod"
 
 [[dependencies.create_structures]]
