@@ -60,6 +60,56 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "zombie"
+    },
+    {
+      "name": "Gasmask",
+      "type": "armor",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gasmask",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Scorchedstructs",
+      "type": "structure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "scorchedstructs"
+    },
+    {
+      "name": "Rag",
+      "type": "armor",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rag",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Gasmaskimproved",
+      "type": "armor",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gasmaskimproved",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
     }
   ],
   "variable_elements": [],
@@ -67,8 +117,20 @@
   "language_map": {
     "en_us": {
       "biome.create_structures.scorched": "Scorched",
+      "item.create_structures.gasmask_chestplate": "Gasmask Кираса",
+      "item.create_structures.rag_helmet": "Rag",
+      "item.create_structures.rag_chestplate": "Rag Кираса",
+      "item.create_structures.rag_boots": "Rag Ботинки",
+      "item.create_structures.gasmask_leggings": "Gasmask Поножи",
+      "item.create_structures.gasmaskimproved_helmet": "Gasmaskimproved",
+      "item.create_structures.gasmaskimproved_leggings": "Gasmaskimproved Поножи",
+      "entity.create_structures.zombie": "soldier_zombie",
+      "item.create_structures.rag_leggings": "Rag Поножи",
+      "item.create_structures.gasmask_helmet": "Gasmask",
+      "item.create_structures.gasmaskimproved_chestplate": "Gasmaskimproved Кираса",
       "item.create_structures.zombie_spawn_egg": "soldier_zombie Spawn Egg",
-      "entity.create_structures.zombie": "soldier_zombie"
+      "item.create_structures.gasmaskimproved_boots": "Gasmaskimproved Ботинки",
+      "item.create_structures.gasmask_boots": "Gasmask Ботинки"
     }
   },
   "foldersRoot": {

@@ -62,12 +62,40 @@
       "registry_name": "zombie"
     },
     {
-      "name": "Scorchedgrass",
-      "type": "block",
+      "name": "Gasmask",
+      "type": "armor",
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "scorchedgrass"
+      "registry_name": "gasmask",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Scorchedstructs",
+      "type": "structure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "scorchedstructs"
+    },
+    {
+      "name": "Rag",
+      "type": "armor",
+      "sortid": 13,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "rag",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
     }
   ],
   "variable_elements": [],
@@ -75,9 +103,16 @@
   "language_map": {
     "en_us": {
       "biome.create_structures.scorched": "Scorched",
+      "item.create_structures.gasmask_chestplate": "Gasmask Кираса",
+      "item.create_structures.rag_helmet": "Rag",
+      "item.create_structures.rag_chestplate": "Rag Кираса",
+      "item.create_structures.rag_boots": "Rag Ботинки",
+      "item.create_structures.gasmask_leggings": "Gasmask Поножи",
       "item.create_structures.zombie_spawn_egg": "soldier_zombie Spawn Egg",
       "entity.create_structures.zombie": "soldier_zombie",
-      "block.create_structures.scorchedgrass": "Scorchedgrass"
+      "item.create_structures.rag_leggings": "Rag Поножи",
+      "item.create_structures.gasmask_helmet": "Gasmask",
+      "item.create_structures.gasmask_boots": "Gasmask Ботинки"
     }
   },
   "foldersRoot": {

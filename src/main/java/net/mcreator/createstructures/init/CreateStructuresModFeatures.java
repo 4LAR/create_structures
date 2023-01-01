@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
 import net.mcreator.createstructures.world.features.VillagehauseFeature;
+import net.mcreator.createstructures.world.features.ScorchedstructsFeature;
 import net.mcreator.createstructures.CreateStructuresMod;
 
 import java.util.function.Supplier;
@@ -31,6 +32,9 @@ public class CreateStructuresModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> VILLAGEHAUSE = register("villagehause", VillagehauseFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.SURFACE_STRUCTURES, VillagehauseFeature.GENERATE_BIOMES, VillagehauseFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SCORCHEDSTRUCTS = register("scorchedstructs", ScorchedstructsFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, ScorchedstructsFeature.GENERATE_BIOMES,
+					ScorchedstructsFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

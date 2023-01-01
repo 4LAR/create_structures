@@ -23,7 +23,7 @@ import net.mcreator.createstructures.CreateStructuresMod;
 public class CreateStructuresModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, CreateStructuresMod.MODID);
 	public static final RegistryObject<EntityType<ZombieEntity>> ZOMBIE = register("zombie",
-			EntityType.Builder.<ZombieEntity>of(ZombieEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			EntityType.Builder.<ZombieEntity>of(ZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(ZombieEntity::new)
 
 					.sized(0.6f, 1.8f));

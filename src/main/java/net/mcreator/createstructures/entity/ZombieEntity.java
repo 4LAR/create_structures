@@ -27,6 +27,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
@@ -42,8 +43,8 @@ public class ZombieEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.AMBIENT)
-					.add(new MobSpawnSettings.SpawnerData(CreateStructuresModEntities.ZOMBIE.get(), 20, 4, 4));
+			event.getSpawns().getSpawner(MobCategory.MONSTER)
+					.add(new MobSpawnSettings.SpawnerData(CreateStructuresModEntities.ZOMBIE.get(), 100, 4, 4));
 	}
 
 	public ZombieEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -97,8 +98,9 @@ public class ZombieEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(CreateStructuresModEntities.ZOMBIE.get(), SpawnPlacements.Type.NO_RESTRICTIONS,
-				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
+		SpawnPlacements.register(CreateStructuresModEntities.ZOMBIE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
+						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

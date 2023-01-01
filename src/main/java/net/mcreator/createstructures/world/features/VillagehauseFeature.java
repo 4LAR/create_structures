@@ -58,10 +58,18 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 		"grave2",
 		"grave3",
 		"grave4",
-//		"vallage_big_hause",
 		"vallage_hause",
 		"vallage_hause2",
-		"vallage_hause3"
+		"vallage_hause3",
+		/////////////////
+		"field_hospital",
+		"artillery_position",
+		"barbed_wire",
+		"long_term_firing_point",
+		"destroyed_long_term_firing_point",
+		"long_term_firing_point_in_the_ground",
+		"destroyed_townhouses",
+		"lil_destroyed_townhouses"
 	};
 
 	private String template_name = "";
@@ -77,7 +85,7 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 	public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
-		//if (template == null)
+		
 		if (spawned) {
 			template_name = Resource_list[context.random().nextInt(Resource_list.length)];
 			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("create_structures", template_name));
@@ -111,7 +119,7 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 				int struct_y = template.getSize().getY();
 				int struct_z = template.getSize().getZ();
 				
-				int rotate_angle = 0;//context.random().nextInt(3);
+				int rotate_angle = 0;
 				
 				int xOffset = 0;
         		int zOffset = 0;
@@ -140,8 +148,8 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 				}
 			}
 		}
-		System.out.print("Spawn ");
-		System.out.println(template_name);
+//		System.out.print("Spawn ");
+//		System.out.println(template_name);
 		spawned = true;
 		return anyPlaced;
 	}
