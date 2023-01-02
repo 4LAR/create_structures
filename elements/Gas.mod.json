@@ -1,0 +1,21 @@
+{
+  "_fv": 34,
+  "_type": "particle",
+  "definition": {
+    "texture": "gas.png",
+    "animate": true,
+    "frameDuration": 1,
+    "width": 0.03,
+    "height": 0.03,
+    "scale": 1.0,
+    "speedFactor": 1.0,
+    "gravity": 0.1,
+    "maxAge": 20,
+    "maxAgeDiff": 5,
+    "angularVelocity": 0.1,
+    "angularAcceleration": 0.01,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "OPAQUE"
+  }
+}

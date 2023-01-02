@@ -1,14 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Base",
-      "type": "loottable",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "base"
-    },
-    {
       "name": "Villagehause",
       "type": "structure",
       "sortid": 6,
@@ -96,9 +88,108 @@
         "eb": false,
         "ec": false
       }
+    },
+    {
+      "name": "Gasmaskimproved",
+      "type": "armor",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gasmaskimproved",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Gas",
+      "type": "particle",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas"
+    },
+    {
+      "name": "Gasscorched",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gasscorched",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Normal",
+      "type": "loottable",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "normal"
+    },
+    {
+      "name": "Rare",
+      "type": "loottable",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rare"
+    },
+    {
+      "name": "Base",
+      "type": "loottable",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "base"
+    },
+    {
+      "name": "Test",
+      "type": "loottable",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "test"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "random_tick_potion",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "random_tick_potion_start",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -108,10 +199,14 @@
       "item.create_structures.rag_chestplate": "Rag Кираса",
       "item.create_structures.rag_boots": "Rag Ботинки",
       "item.create_structures.gasmask_leggings": "Gasmask Поножи",
-      "item.create_structures.zombie_spawn_egg": "soldier_zombie Spawn Egg",
+      "item.create_structures.gasmaskimproved_helmet": "Gasmaskimproved",
+      "item.create_structures.gasmaskimproved_leggings": "Gasmaskimproved Поножи",
       "entity.create_structures.zombie": "soldier_zombie",
       "item.create_structures.rag_leggings": "Rag Поножи",
       "item.create_structures.gasmask_helmet": "Gasmask",
+      "item.create_structures.gasmaskimproved_chestplate": "Gasmaskimproved Кираса",
+      "item.create_structures.zombie_spawn_egg": "soldier_zombie Spawn Egg",
+      "item.create_structures.gasmaskimproved_boots": "Gasmaskimproved Ботинки",
       "item.create_structures.gasmask_boots": "Gasmask Ботинки"
     }
   },

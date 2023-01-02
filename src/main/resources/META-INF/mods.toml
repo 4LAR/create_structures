@@ -4,8 +4,8 @@ license="MIT License"
 
 [[mods]]
 modId="create_structures"
-version="1.0.0"
-displayName="create_structures"
+version="0.1.0"
+displayName="create_great_war"
 credits="avtor mudak"
 displayURL="https://github.com/4LAR/create_structures"
 authors="100LAR & Urod"

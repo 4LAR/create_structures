@@ -51,25 +51,49 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
 	private String[] Resource_list = new String[] {
+//		"car",
+//		"field_tent",
+//		"field_theatre",
+//		"grave",
+//		"grave2",
+//		"grave3",
+//		"grave4",
+//		"vallage_hause",
+//		"vallage_hause2",
+//		"vallage_hause3",
+//		/////////////////
+//		"field_hospital",
+//		"artillery_position",
+//		"barbed_wire",
+//		"long_term_firing_point",
+//		"destroyed_long_term_firing_point",
+//		"long_term_firing_point_in_the_ground",
+//		"destroyed_townhouses",
+//		"lil_destroyed_townhouses"
+		"artillery_position",
+		"barbed_wire",
+		"bunker",
+		"camp_grass",
 		"car",
+		"crater_grass",
+		"destroyed_long_term_firing_point",
+		"destroyed_townhouses",
+		"field_hospital",
 		"field_tent",
 		"field_theatre",
 		"grave",
 		"grave2",
 		"grave3",
 		"grave4",
+		"lil_destroyed_townhouses",
+		"long_term_firing_point",
+		"long_term_firing_point_in_the_ground",
+		"tower_grass",
+		"trench_grass",
+		//"vallage_big_hause",
 		"vallage_hause",
 		"vallage_hause2",
-		"vallage_hause3",
-		/////////////////
-		"field_hospital",
-		"artillery_position",
-		"barbed_wire",
-		"long_term_firing_point",
-		"destroyed_long_term_firing_point",
-		"long_term_firing_point_in_the_ground",
-		"destroyed_townhouses",
-		"lil_destroyed_townhouses"
+		"vallage_hause3"
 	};
 
 	private String template_name = "";
@@ -105,9 +129,14 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
 				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock())) {
 					spawned = false;
-					continue;
+					//continue;
+					break;
 				}
-				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
+				int bottom_offs = 0;
+				if (template_name == "bunker") {
+					bottom_offs = 15;
+				}
+				BlockPos spawnTo = new BlockPos(i + 0, j - bottom_offs, k + 0);
 				WorldGenLevel world = context.level();
 				int x = spawnTo.getX();
 				int y = spawnTo.getY();
@@ -135,9 +164,10 @@ public class VillagehauseFeature extends Feature<NoneFeatureConfiguration> {
 				}
 				////////////////////////////////////
 				
-				if (!Additional_genProcedure.execute(world, x + xOffset, y, z + zOffset, template)) {
+				if (!Additional_genProcedure.execute(world, x + xOffset, y, z + zOffset, template) & (template_name != "bunker")) {
 					spawned = false;
-					continue;
+					//continue;
+					break;
 				}
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
 						new StructurePlaceSettings().setMirror(Mirror.values()[0])

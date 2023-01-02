@@ -21,7 +21,7 @@ public class Additional_genProcedure {
 			{0, struct_z}	
 		};
 
-		int depth_check = 10;
+		int depth_check = 4;
 		int height;
 		// проверка на пустоту и воду
 		for (height = 0; height < depth_check; height++) {

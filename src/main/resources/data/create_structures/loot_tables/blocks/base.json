@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:chest",
+  "type": "minecraft:block",
   "pools": [
     {
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_ingot",
+          "name": "minecraft:polished_diorite",
           "weight": 1,
           "functions": [
             {
@@ -20,42 +20,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:rotten_flesh",
+          "name": "minecraft:cobbled_deepslate",
           "weight": 1,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:copper_ingot",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:leather",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 10
+                "min": 0,
+                "max": 20
               }
             }
           ]

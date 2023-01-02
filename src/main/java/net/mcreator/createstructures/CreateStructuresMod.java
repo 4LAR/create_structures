@@ -26,6 +26,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.createstructures.init.CreateStructuresModParticleTypes;
 import net.mcreator.createstructures.init.CreateStructuresModItems;
 import net.mcreator.createstructures.init.CreateStructuresModFeatures;
 import net.mcreator.createstructures.init.CreateStructuresModEntities;
@@ -54,7 +55,7 @@ public class CreateStructuresMod {
 		CreateStructuresModFeatures.REGISTRY.register(bus);
 
 		CreateStructuresModBiomes.REGISTRY.register(bus);
-
+		CreateStructuresModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

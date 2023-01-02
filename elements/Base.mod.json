@@ -14,7 +14,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.IRON_INGOT"
+              "value": "Blocks.STONE#4"
             },
             "weight": 1,
             "minCount": 1,
@@ -28,39 +28,11 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.ROTTEN_FLESH"
+              "value": "Blocks.COBBLED_DEEPSLATE"
             },
             "weight": 1,
-            "minCount": 1,
-            "maxCount": 10,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.COPPER_INGOT"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 10,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.LEATHER"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 10,
+            "minCount": 0,
+            "maxCount": 20,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -70,7 +42,7 @@
         ]
       }
     ],
-    "name": "blocks/base",
+    "name": "base_loottable",
     "namespace": "mod"
   }
 }
