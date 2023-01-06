@@ -47,18 +47,26 @@ public class GasscorchedProcedure {
 								.getItem() == CreateStructuresModItems.GASMASK_HELMET.get()
 						|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
 								.getItem() == CreateStructuresModItems.GASMASKIMPROVED_HELMET.get()) {
-					{
-						ItemStack _ist = (entity instanceof LivingEntity _entGetArmor
-								? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD)
-								: ItemStack.EMPTY);
-						if (_ist.hurt(1, new Random(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
+					if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY))
+							.getDamageValue() < ((entity instanceof LivingEntity _entGetArmor
+									? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD)
+									: ItemStack.EMPTY)).getMaxDamage() - 1) {
+						{
+							ItemStack _ist = (entity instanceof LivingEntity _entGetArmor
+									? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD)
+									: ItemStack.EMPTY);
+							if (_ist.hurt(1, new Random(), null)) {
+								_ist.shrink(1);
+								_ist.setDamageValue(0);
+							}
 						}
+					} else {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 50, 2));
 					}
 				} else {
 					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 1));
+						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 50, 2));
 				}
 			}
 			CreateStructuresModVariables.MapVariables

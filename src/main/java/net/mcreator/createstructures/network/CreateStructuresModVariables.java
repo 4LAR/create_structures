@@ -93,6 +93,7 @@ public class CreateStructuresModVariables {
 		public static final String DATA_NAME = "create_structures_mapvars";
 		public double random_tick_potion = 0;
 		public double random_tick_potion_start = 0;
+		public double REPAIR_GASMASK = 100.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -103,12 +104,14 @@ public class CreateStructuresModVariables {
 		public void read(CompoundTag nbt) {
 			random_tick_potion = nbt.getDouble("random_tick_potion");
 			random_tick_potion_start = nbt.getDouble("random_tick_potion_start");
+			REPAIR_GASMASK = nbt.getDouble("REPAIR_GASMASK");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("random_tick_potion", random_tick_potion);
 			nbt.putDouble("random_tick_potion_start", random_tick_potion_start);
+			nbt.putDouble("REPAIR_GASMASK", REPAIR_GASMASK);
 			return nbt;
 		}
 
