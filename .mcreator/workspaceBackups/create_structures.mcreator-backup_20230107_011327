@@ -168,19 +168,11 @@
       "registry_name": "base"
     },
     {
-      "name": "Test",
-      "type": "loottable",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "test"
-    },
-    {
       "name": "Ragcraft",
       "type": "recipe",
       "sortid": 21,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ragcraft"
     },
     {
@@ -207,7 +199,20 @@
       "locked_code": false,
       "registry_name": "filter_use",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -217,6 +222,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "filter"
+    },
+    {
+      "name": "Test",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test"
     }
   ],
   "variable_elements": [
@@ -231,6 +244,12 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "REPAIR_GASMASK",
+      "type": "number",
+      "scope": "map",
+      "value": "100.0"
     }
   ],
   "sound_elements": [],

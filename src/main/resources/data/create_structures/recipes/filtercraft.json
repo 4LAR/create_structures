@@ -1,10 +1,9 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    " RRR ",
-    "RCRCR",
-    " LLL ",
-    "  S  "
+    " L L ",
+    "LSSSL",
+    " LLL "
   ],
   "key": {
     "L": {
@@ -14,14 +13,14 @@
       "item": "minecraft:leather"
     },
     "S": {
-      "item": "create_structures:filter"
+      "item": "minecraft:coal_block"
     },
     "C": {
       "item": "minecraft:glass_pane"
     }
   },
   "result": {
-    "item": "create_structures:gasmask_helmet"
+    "item": "create_structures:filter"
   },
   "acceptMirrored": true
 }

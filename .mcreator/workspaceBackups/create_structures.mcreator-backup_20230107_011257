@@ -180,7 +180,7 @@
       "type": "recipe",
       "sortid": 21,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ragcraft"
     },
     {
@@ -198,6 +198,38 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "gasmaskimprovedcraft"
+    },
+    {
+      "name": "FilterUse",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "filter_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Filter",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "filter"
     }
   ],
   "variable_elements": [
@@ -212,6 +244,12 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "REPAIR_GASMASK",
+      "type": "number",
+      "scope": "map",
+      "value": "100.0"
     }
   ],
   "sound_elements": [],
@@ -228,6 +266,7 @@
       "entity.create_structures.zombie": "soldier_zombie",
       "item.create_structures.rag_leggings": "Rag Поножи",
       "item.create_structures.gasmask_helmet": "Gasmask",
+      "item.create_structures.filter": "Filter",
       "item.create_structures.gasmaskimproved_chestplate": "Gasmaskimproved Кираса",
       "item.create_structures.zombie_spawn_egg": "soldier_zombie Spawn Egg",
       "item.create_structures.gasmaskimproved_boots": "Gasmaskimproved Ботинки",

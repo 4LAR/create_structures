@@ -3,8 +3,8 @@
   "pattern": [
     " ARRRA",
     " RCRCR",
-    "LSLSL ",
-    "  LL  "
+    "SLLLL ",
+    "   S  "
   ],
   "key": {
     "L": {
@@ -14,7 +14,7 @@
       "item": "minecraft:leather"
     },
     "S": {
-      "item": "minecraft:coal_block"
+      "item": "create_structures:filter"
     },
     "C": {
       "item": "minecraft:glass_pane"

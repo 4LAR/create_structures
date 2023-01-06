@@ -168,19 +168,11 @@
       "registry_name": "base"
     },
     {
-      "name": "Test",
-      "type": "loottable",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "test"
-    },
-    {
       "name": "Ragcraft",
       "type": "recipe",
       "sortid": 21,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ragcraft"
     },
     {
@@ -230,6 +222,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "filter"
+    },
+    {
+      "name": "Filtercraft",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "filtercraft"
     }
   ],
   "variable_elements": [
