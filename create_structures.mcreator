@@ -1,14 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Villagehause",
-      "type": "structure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "villagehause"
-    },
-    {
       "name": "Additional_gen",
       "type": "procedure",
       "sortid": 7,

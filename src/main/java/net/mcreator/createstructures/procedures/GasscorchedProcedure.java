@@ -63,10 +63,14 @@ public class GasscorchedProcedure {
 					} else {
 						if (entity instanceof LivingEntity _entity)
 							_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 50, 2));
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 150, 0));
 					}
 				} else {
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 50, 2));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 150, 0));
 				}
 			}
 			CreateStructuresModVariables.MapVariables

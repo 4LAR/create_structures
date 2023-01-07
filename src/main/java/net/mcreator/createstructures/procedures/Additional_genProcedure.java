@@ -33,15 +33,15 @@ public class Additional_genProcedure {
 		}
 
 		// делаем островок
-		for (height = 0; height < depth_check; height++) {
-			for (int circle_x = 0; circle_x < struct_x; circle_x++) {
-				for (int circle_z = 0; circle_z < struct_z; circle_z++) {
-					if (world.isEmptyBlock(new BlockPos(xx + circle_x, yy - height - 1, zz + circle_z)) | ((world.getFluidState(new BlockPos(xx + circle_x, yy - height - 1, zz + circle_z)).createLegacyBlock()).getBlock() instanceof LiquidBlock)) {
-						world.setBlock(new BlockPos(xx + circle_x, yy - height, zz + circle_z), Blocks.DIRT.defaultBlockState(), 3);
-					}
-				}
-			}
-		}
+//		for (height = 0; height < depth_check; height++) {
+//			for (int circle_x = 0; circle_x < struct_x; circle_x++) {
+//				for (int circle_z = 0; circle_z < struct_z; circle_z++) {
+//					if (world.isEmptyBlock(new BlockPos(xx + circle_x, yy - height - 1, zz + circle_z)) | ((world.getFluidState(new BlockPos(xx + circle_x, yy - height - 1, zz + circle_z)).createLegacyBlock()).getBlock() instanceof LiquidBlock)) {
+//						world.setBlock(new BlockPos(xx + circle_x, yy - height, zz + circle_z), Blocks.DIRT.defaultBlockState(), 3);
+//					}
+//				}
+//			}
+//		}
 //		for (int height = 0; height < max_size / 3; height++) {
 //			double pow_height = Math.pow(height, 2);
 //			for (int circle_x = 0; circle_x < struct_x - pow_height; circle_x++) {

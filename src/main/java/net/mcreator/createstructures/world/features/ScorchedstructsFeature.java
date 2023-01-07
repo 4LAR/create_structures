@@ -51,11 +51,8 @@ public class ScorchedstructsFeature extends Feature<NoneFeatureConfiguration> {
 	private StructureTemplate template = null;
 	
 	private String[] Resource_list = new String[] {
-		"trench",
-		"trench_tree",
-		"crater",
-		"dot_dest_dirt",
-		"dot_dirt"
+		"tent",
+		"tower"
 	};
 
 	private String template_name = "";
@@ -94,7 +91,7 @@ public class ScorchedstructsFeature extends Feature<NoneFeatureConfiguration> {
 					//continue;
 					break;
 				}
-				BlockPos spawnTo = new BlockPos(i + 0, j - 1, k + 0);
+				BlockPos spawnTo = new BlockPos(i + 0, j - 0, k + 0);
 				WorldGenLevel world = context.level();
 				int x = spawnTo.getX();
 				int y = spawnTo.getY();
