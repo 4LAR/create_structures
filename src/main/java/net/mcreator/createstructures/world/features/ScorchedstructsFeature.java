@@ -52,7 +52,10 @@ public class ScorchedstructsFeature extends Feature<NoneFeatureConfiguration> {
 	
 	private String[] Resource_list = new String[] {
 		"tent",
-		"tower"
+		"tower",
+		"grave1",
+		"grave2",
+		"grave3"
 	};
 
 	private String template_name = "";
@@ -80,16 +83,15 @@ public class ScorchedstructsFeature extends Feature<NoneFeatureConfiguration> {
 //		System.out.println(template.getSize());
 		
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 200000) {
+		if ((context.random().nextInt(1000000) + 1) <= 50000) {
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
 				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
 				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock())) {
-					spawned = false;
-					//continue;
-					break;
+					continue;
+					//break;
 				}
 				BlockPos spawnTo = new BlockPos(i + 0, j - 0, k + 0);
 				WorldGenLevel world = context.level();
@@ -103,40 +105,38 @@ public class ScorchedstructsFeature extends Feature<NoneFeatureConfiguration> {
 				int struct_y = template.getSize().getY();
 				int struct_z = template.getSize().getZ();
 				
-				int rotate_angle = 0;
+				int rotate_random = context.random().nextInt(3);
+				int mirrorror_random = 0;//context.random().nextInt(2);
 				
 				int xOffset = 0;
         		int zOffset = 0;
 				
-				if (rotate_angle == 1) {
+				if (rotate_random == 1) {
+					zOffset -= struct_z;
+				} else if (rotate_random == 2) {
 					xOffset -= struct_x;
-				} else if (rotate_angle == 2) {
+				} else if (rotate_random == 3) {
 					zOffset -= struct_z;
 					xOffset -= struct_x;
-				} else if (rotate_angle == 3) {
-					zOffset += struct_z;
-					xOffset += struct_x;
 				}
 				////////////////////////////////////
 				
 				if (!Additional_genProcedure.execute(world, x + xOffset, y, z + zOffset, template)) {
-					spawned = false;
-					//continue;
-					break;
+					continue;
+					//break;
 				}
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
-						new StructurePlaceSettings().setMirror(Mirror.values()[0])
-								.setRotation(Rotation.values()[rotate_angle]).setRandom(context.random())
-//								.addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
-								.addProcessor(BlockIgnoreProcessor.AIR).setIgnoreEntities(false),
+						new StructurePlaceSettings().setMirror(Mirror.values()[mirrorror_random])
+								.setRotation(Rotation.values()[rotate_random]).setRandom(context.random())
+								.addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
 						context.random(), 2)) {
 					anyPlaced = true;
 				}
+
 			}
 		}
 //		System.out.print("Spawn ");
 //		System.out.println(template_name);
-		spawned = true;
 		return anyPlaced;
 	}
 

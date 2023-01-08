@@ -1,14 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Villagehause",
-      "type": "structure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "villagehause"
-    },
-    {
       "name": "Additional_gen",
       "type": "procedure",
       "sortid": 7,
@@ -230,6 +222,14 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "filtercraft"
+    },
+    {
+      "name": "Test",
+      "type": "structure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test"
     }
   ],
   "variable_elements": [

@@ -21,16 +21,23 @@ public class Additional_genProcedure {
 			{0, struct_z}	
 		};
 
-		int depth_check = 4;
-		int height;
-		// проверка на пустоту и воду
-		for (height = 0; height < depth_check; height++) {
-			for (int i = 0; i < 4; i++) {
-				if ((world.isEmptyBlock(new BlockPos(xx + size_pos[i][0], yy - 1, zz + size_pos[i][1]))) | ((world.getFluidState(new BlockPos(xx + size_pos[i][0], yy - height, zz + size_pos[i][1])).createLegacyBlock()).getBlock() instanceof LiquidBlock)) {
-					return false;
-				}
+		int height = -1;
+		for (int i = 0; i < 4; i++) {
+			if ((world.isEmptyBlock(new BlockPos(xx + size_pos[i][0], yy - 1, zz + size_pos[i][1]))) | ((world.getFluidState(new BlockPos(xx + size_pos[i][0], yy - height, zz + size_pos[i][1])).createLegacyBlock()).getBlock() instanceof LiquidBlock)) {
+				return false;
 			}
 		}
+
+//		int depth_check = 4;
+//		int height;
+//		// проверка на пустоту и воду
+//		for (height = 0; height < depth_check; height++) {
+//			for (int i = 0; i < 4; i++) {
+//				if ((world.isEmptyBlock(new BlockPos(xx + size_pos[i][0], yy - 1, zz + size_pos[i][1]))) | ((world.getFluidState(new BlockPos(xx + size_pos[i][0], yy - height, zz + size_pos[i][1])).createLegacyBlock()).getBlock() instanceof LiquidBlock)) {
+//					return false;
+//				}
+//			}
+//		}
 
 		// делаем островок
 //		for (height = 0; height < depth_check; height++) {
